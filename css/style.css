@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Ranchers&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap');
+
 *{
     margin: 0;
     padding: 0;
@@ -9,6 +12,30 @@ body{
 
 #headerTitle{
     font-size: 4rem;
+    font-family: "Ranchers", sans-serif;
+    letter-spacing: 8px;
+}
+
+.vignette{
+    background-color: white;
+    width: 350px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px;
+    border: 3px solid black;
+}
+
+.photo{
+    height: 300px;
+    margin: 20px;
+    border: 3px solid black;
+}
+
+p{
+    font-family: "Patrick Hand", cursive;
+    padding: 20px;
+    text-align: justify;
 }
 
 header{
