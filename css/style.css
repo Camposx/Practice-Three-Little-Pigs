@@ -12,15 +12,14 @@ body{
 
 main{
     display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    
 }
 #headerTitle{
     font-size: 4rem;
     font-family: "Ranchers", sans-serif;
     letter-spacing: 8px;
-}
-
-main{
-    background-color: aqua;
 }
 
 .vignette{
@@ -39,9 +38,14 @@ main{
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin: 20px;
+    margin: 0px 20px 27px 20px;
     border: 3px solid black;
 }
+
+.multipleVignette{
+    margin-top: 20px;
+}
+
 .squareVignette{
     background-color: white;
     width: 350px;
@@ -51,12 +55,21 @@ main{
     margin: 20px;
     border: 3px solid black;
 }
+
+.squareVignette .halfPhotoRight{
+    align-self: end;
+}
+
+.verticalVignette .halfPhotoRight{
+    align-self: end;
+}
+
 .verticalVignette{
     background-color: white;
     width: 350px;
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: start;
     margin: 20px;
     border: 3px solid black;
 }
@@ -67,10 +80,14 @@ main{
     border: 3px solid black;
 }
 
-.halfPhoto{
+.halfPhoto, .halfPhotoRight{
     width: 150px;
     margin: 20px;
     border: 3px solid black;
+}
+
+.halfText{
+    width: 150px;
 }
 
 p{
