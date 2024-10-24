@@ -22,12 +22,28 @@ main{
     letter-spacing: 8px;
 }
 
-.vignette, .horizontalVignette, .bigVignette, .squareVignette, .verticalVignette{
+#vignetteTitle{
+    font-family: "Ranchers", sans-serif;
+    letter-spacing: 4px;
+}
+
+.introduction{
+    background-color: white;
+    width: 1050px;
+    min-width: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px;
+    border: 3px solid black;
+}
+
+.vignette, .horizontalVignette, .bigVignette, .squareVignette, .verticalVignette, .introduction{
     box-shadow: 5px 5px 5px rgb(0, 0, 0, 0.5);
     transition: transform 0.2s, box-shadow .2s;
 }
 
-.vignette:hover, .horizontalVignette:hover, .bigVignette:hover, .squareVignette:hover, .verticalVignette:hover{
+.vignette:hover, .horizontalVignette:hover, .bigVignette:hover, .squareVignette:hover, .verticalVignette:hover, .introduction:hover{
     transform: scale(1.2);
     box-shadow: 15px 20px 10px rgb(0, 0, 0, 0.5);
 }
@@ -107,7 +123,8 @@ main{
 
 .photoAndText{
     display: flex;
-    flex-direction: row-reverse; 
+    flex-direction: row-reverse;
+    align-items: center; 
 }
 .photoAndText  .halfPhotoRight{
     order: 1;
@@ -121,6 +138,7 @@ p{
     font-family: "Patrick Hand", cursive;
     padding: 20px;
     text-align: justify;
+    font-size: 1.1em;
 }
 
 header{
